@@ -1,0 +1,10 @@
+
+<h1><%= @contact.full_name %></h1>
+<h6>Updated on: <%= @contact.friendly_updated_at %></h6>
+<h2>Email: <%= @contact.email %></h2>
+<h3>Phone Number: <%= @contact.phone_number %></h3>
+
+<br>
+<%= link_to 'Edit', "/contacts/#{@contact.id}/edit" %>
+<br>
+<%= link_to 'Delete', "/contacts/#{@contact.id}", method: :delete %>
